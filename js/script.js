@@ -43,6 +43,8 @@ $("#shoot").click(function(){
     }
     if (userChoice === "Scissors" && computerChoice === "Paper") {
         $("#result").html("User Wins");
+        userWin += 1
+        $("#userWins").html(userWin);
     }
     if (userChoice === "Rock" && computerChoice === "Rock") {
         $("#result").html("Tie");
@@ -50,16 +52,23 @@ $("#shoot").click(function(){
     }
     if (userChoice === "Paper" && computerChoice === "Rock") {
         $("#result").html("User Wins");
+        userWin += 1
+        $("#userWins").html(userWin);
     }
     if (userChoice === "Scissors" && computerChoice === "Rock") {
         $("#result").html("Computer Wins");
+        compWin += 1
+        $("#compWins").html(compWin);
     }
     if (userChoice === "Rock" && computerChoice === "Scissors") {
         $("#result").html("User Wins");
-        
+        userWin += 1
+        $("#userWins").html(userWin);
     }
     if (userChoice === "Paper" && computerChoice === "Scissors") {
         $("#result").html("Computer Wins");
+        compWin += 1
+        $("#compWins").html(compWin);
     }
     if (userChoice === "Scissors" && computerChoice === "Scissors") {
         $("#result").html("Tie");

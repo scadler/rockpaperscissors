@@ -18,7 +18,33 @@ input{
 body{
   background-color: #cecece
 }
-img{
+#RPS{
   height: 300px;
   border: 2px solid #ababab;
+}
+
+#stone1{
+  border: 2px solid #ababab;
+  height: 60px;
+}
+#blade1{
+  border: 2px solid #ababab;
+  height: 60px;
+}
+#parchment1{
+  border: 2px solid #ababab;
+  height: 60px;
+}
+
+#stone2{
+  border: 2px solid #ababab;
+  height: 60px;
+}
+#blade2{
+  border: 2px solid #ababab;
+  height: 60px;
+}
+#parchment2{
+  border: 2px solid #ababab;
+  height: 60px;
 }

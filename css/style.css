@@ -4,7 +4,7 @@
 }
 #choices{
   display:flex;
-  justify-content:space-between;
+  justify-content:space-around;
   
 }
 button{
@@ -14,4 +14,10 @@ button{
 input{
   background-color: #ccffd7;
   border-radius: 5px;
+}
+body{
+  background-color: #cecece
+}
+img{
+  height: 300px;
 }

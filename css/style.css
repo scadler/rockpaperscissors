@@ -5,7 +5,6 @@
 #choices{
   display:flex;
   justify-content:space-around;
-  
 }
 button{
   background-color: #ccffd7;
@@ -19,7 +18,7 @@ body{
   background-color: #cecece
 }
 #RPS{
-  height: 300px;
+  height: 250px;
   border: 2px solid #ababab;
 }
 

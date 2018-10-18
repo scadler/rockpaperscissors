@@ -28,6 +28,7 @@ $("#shoot").click(function(){
     userChoice = $("#input").val();
    //Disabled to test style $("#userChoice").text($("#input").val());
     randomNumber = Math.random()
+    console.log(userChoice)
         //User Input Images
     if (userChoice === "Rock"){
         $("#stone1").show();
@@ -44,9 +45,6 @@ $("#shoot").click(function(){
         $("#blade1").show();
         $("#parchment1").hide();
     }
-    
-    //Debug console
-    
 
     // Computer output + images
     

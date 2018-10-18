@@ -13,11 +13,10 @@ var computerChoice = ""
 var randomNumber = 0
 var userWin = 0
 var compWin = 0
+var userInput = ""
     
 
 $(document).ready(function(){
-    // I am trying to hide these images and make them show
-    //when the relating word is typed
     $("#stone1").hide();
     $("#blade1").hide();
     $("#parchment1").hide();
@@ -27,26 +26,30 @@ $(document).ready(function(){
     // Button clickhandler
 $("#shoot").click(function(){
     userChoice = $("#input").val();
-    $("#userChoice").text($("#input").val());
+   //Disabled to test style $("#userChoice").text($("#input").val());
     randomNumber = Math.random()
-    //This does not work Fix everthing below
-    if (userChoice = "Rock"){
+        //User Input Images
+    if (userChoice === "Rock"){
         $("#stone1").show();
         $("#blade1").hide();
         $("#parchment1").hide();
     }
-    if (userChoice = "Paper"){
-        $("#stone1").hide();
-        $("#blade1").show();
-        $("#parchment1").hide();
-    }
-    if (userChoice = "Scissors"){
+    if (userChoice === "Paper"){
         $("#stone1").hide();
         $("#blade1").hide();
         $("#parchment1").show();
     }
-    //Fix everything above
-    // Computer output
+    if (userChoice === "Scissors"){
+        $("#stone1").hide();
+        $("#blade1").show();
+        $("#parchment1").hide();
+    }
+    
+    //Debug console
+    
+
+    // Computer output + images
+    
     if (randomNumber <= 0.33) {
         computerChoice = "Rock"
         $("#stone2").show();
@@ -65,7 +68,9 @@ $("#shoot").click(function(){
         $("#stone2").hide();
         $("#blade2").hide();
     }
+    
     // Who wins
+    
     if (userChoice === "Rock" && computerChoice === "Paper") {
         $("#result").html("Computer Wins");
         compWin += 1
@@ -107,7 +112,7 @@ $("#shoot").click(function(){
         $("#result").html("Tie");
     }
     
-    console.log(userChoice);
+    
 });
 });
 

@@ -14,6 +14,7 @@ var randomNumber = 0
 var userWin = 0
 var compWin = 0
 var userInput = ""
+var winRatio
     
 
 $(document).ready(function(){
@@ -29,6 +30,8 @@ $("#shoot").click(function(){
    //Disabled to test style $("#userChoice").text($("#input").val());
     randomNumber = Math.random()
     console.log(userChoice)
+    
+    
         //User Input Images
     if (userChoice === "Rock"){
         $("#stone1").show();
@@ -67,47 +70,77 @@ $("#shoot").click(function(){
         $("#blade2").hide();
     }
     
-    // Who wins
+    // Who wins + Ratio calculator
     
     if (userChoice === "Rock" && computerChoice === "Paper") {
-        $("#result").html("Computer Wins");
+        $("#result").html("Computer Wins"+",");
         compWin += 1
         $("#compWins").html(compWin);
+        winRatio = userWin/(compWin+userWin);
+        winRatio = winRatio*100;
+        winRatio = Math.round(winRatio);
+        $("#resultRatio").html(winRatio)
+        console.log(winRatio);
     }
     if (userChoice === "Paper" && computerChoice === "Paper") {
-        $("#result").html("Tie");
+        $("#result").html("Tie"+",");
     }
     if (userChoice === "Scissors" && computerChoice === "Paper") {
-        $("#result").html("User Wins");
+        $("#result").html("User Wins"+",");
         userWin += 1
         $("#userWins").html(userWin);
+        winRatio = userWin/(compWin+userWin);
+        winRatio = winRatio*100;
+        winRatio = Math.round(winRatio);
+        $("#resultRatio").html(winRatio)
+        console.log(winRatio);
     }
     if (userChoice === "Rock" && computerChoice === "Rock") {
-        $("#result").html("Tie");
+        $("#result").html("Tie"+",");
         
     }
     if (userChoice === "Paper" && computerChoice === "Rock") {
-        $("#result").html("User Wins");
+        $("#result").html("User Wins"+",");
         userWin += 1
         $("#userWins").html(userWin);
+        winRatio = userWin/(compWin+userWin);
+        winRatio = winRatio*100;
+        winRatio = Math.round(winRatio);
+        $("#resultRatio").html(winRatio)
+        console.log(winRatio);
     }
     if (userChoice === "Scissors" && computerChoice === "Rock") {
-        $("#result").html("Computer Wins");
+        $("#result").html("Computer Wins"+",");
         compWin += 1
         $("#compWins").html(compWin);
+        winRatio = userWin/(compWin+userWin);
+        winRatio = winRatio*100;
+        winRatio = Math.round(winRatio);
+        $("#resultRatio").html(winRatio)
+        console.log(winRatio);
     }
     if (userChoice === "Rock" && computerChoice === "Scissors") {
-        $("#result").html("User Wins");
+        $("#result").html("User Wins"+",");
         userWin += 1
         $("#userWins").html(userWin);
+        winRatio = userWin/(compWin+userWin);
+        winRatio = winRatio*100;
+        winRatio = Math.round(winRatio);
+        $("#resultRatio").html(winRatio)
+        console.log(winRatio);
     }
     if (userChoice === "Paper" && computerChoice === "Scissors") {
-        $("#result").html("Computer Wins");
+        $("#result").html("Computer Wins"+",");
         compWin += 1
         $("#compWins").html(compWin);
+        winRatio = userWin/(compWin+userWin);
+        winRatio = winRatio*100;
+        winRatio = Math.round(winRatio);
+        $("#resultRatio").html(winRatio)
+        console.log(winRatio);
     }
     if (userChoice === "Scissors" && computerChoice === "Scissors") {
-        $("#result").html("Tie");
+        $("#result").html("Tie"+",");
     }
     
     

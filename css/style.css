@@ -6,6 +6,10 @@
   display:flex;
   justify-content:space-around;
 }
+#results{
+  display:flex;
+  justify-content:center;
+}
 button{
   background-color: #ccffd7;
   border-radius: 5px;
@@ -18,7 +22,7 @@ body{
   background-color: #cecece
 }
 #RPS{
-  height: 250px;
+  height: 235px;
   border: 2px solid #ababab;
 }
 

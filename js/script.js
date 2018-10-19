@@ -89,11 +89,11 @@ $("#shoot").click(function(){
         winRatio = winRatio*100;
         winRatio = Math.round(winRatio);
         $("#resultRatio").html(winRatio)
-        console.log(userChoice + counter + "ComputerWon")
+        console.log(userChoice + counter + "ComputerWon");
     }
     if (userChoice === "Paper" && computerChoice === "Paper") {
         $("#result").html("Tie"+",");
-        (userChoice + counter + "Tie")
+        console.log(userChoice + counter + "Tie");
     }
     if (userChoice === "Scissors" && computerChoice === "Paper") {
         $("#result").html("User Wins"+",");
@@ -103,11 +103,11 @@ $("#shoot").click(function(){
         winRatio = winRatio*100;
         winRatio = Math.round(winRatio);
         $("#resultRatio").html(winRatio)
-        (userChoice + counter + "UserWon")
+        console.log(userChoice + counter + "UserWon");
     }
     if (userChoice === "Rock" && computerChoice === "Rock") {
         $("#result").html("Tie"+",");
-        (userChoice + counter + "Tie")
+        console.log(userChoice + counter + "Tie");
     }
     if (userChoice === "Paper" && computerChoice === "Rock") {
         $("#result").html("User Wins"+",");
@@ -117,7 +117,7 @@ $("#shoot").click(function(){
         winRatio = winRatio*100;
         winRatio = Math.round(winRatio);
         $("#resultRatio").html(winRatio)
-        (userChoice + counter + "UserWon")
+        console.log(userChoice + counter + "UserWon");
     }
     if (userChoice === "Scissors" && computerChoice === "Rock") {
         $("#result").html("Computer Wins"+",");
@@ -127,7 +127,7 @@ $("#shoot").click(function(){
         winRatio = winRatio*100;
         winRatio = Math.round(winRatio);
         $("#resultRatio").html(winRatio)
-        (userChoice + counter + "ComputerWon")
+        console.log(userChoice + counter + "ComputerWon");
     }
     if (userChoice === "Rock" && computerChoice === "Scissors") {
         $("#result").html("User Wins"+",");
@@ -137,7 +137,7 @@ $("#shoot").click(function(){
         winRatio = winRatio*100;
         winRatio = Math.round(winRatio);
         $("#resultRatio").html(winRatio)
-        (userChoice + counter + "UserWon")
+        console.log(userChoice + counter + "UserWon");
     }
     if (userChoice === "Paper" && computerChoice === "Scissors") {
         $("#result").html("Computer Wins"+",");
@@ -147,11 +147,11 @@ $("#shoot").click(function(){
         winRatio = winRatio*100;
         winRatio = Math.round(winRatio);
         $("#resultRatio").html(winRatio)
-        (userChoice + counter + "ComputerWon")
+        console.log(userChoice + counter + "ComputerWon");
     }
     if (userChoice === "Scissors" && computerChoice === "Scissors") {
         $("#result").html("Tie"+",");
-        (userChoice + counter + "Tie")
+        console.log(userChoice + counter + "Tie");
     }
     
     

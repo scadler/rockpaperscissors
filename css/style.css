@@ -11,15 +11,15 @@
   justify-content:center;
 }
 button{
-  background-color: #ccffd7;
+  background-color: #ccffff;
   border-radius: 5px;
 }
 input{
-  background-color: #ccffd7;
+  background-color: #ccffff;
   border-radius: 5px;
 }
 body{
-  background-color: #cecece;
+  background-color: #90f0e3;
   background-image:url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");
 }
 #RPS{

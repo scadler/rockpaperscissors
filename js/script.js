@@ -8,6 +8,7 @@
 
 
 // DOCUMENT READY FUNCTION BELOW
+
 var userChoice = ""
 var computerChoice = ""
 var randomNumber = 0
@@ -15,10 +16,10 @@ var userWin = 0
 var compWin = 0
 var userInput = ""
 var winRatio
-var counter = 0
-    
+var counter = 0   
 
 $(document).ready(function(){
+    
     $("#start1").show();
     $("#start2").show();
     $("#stone1").hide();

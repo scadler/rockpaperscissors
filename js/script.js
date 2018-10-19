@@ -18,6 +18,8 @@ var winRatio
     
 
 $(document).ready(function(){
+    $("#start1").show();
+    $("#start2").show();
     $("#stone1").hide();
     $("#blade1").hide();
     $("#parchment1").hide();
@@ -26,13 +28,17 @@ $(document).ready(function(){
     $("#parchment2").hide();
     // Button clickhandler
 $("#shoot").click(function(){
+    $("#start1").hide();
+    $("#start2").hide();
     userChoice = $("#input").val();
    //Disabled to test style $("#userChoice").text($("#input").val());
     randomNumber = Math.random()
     console.log(userChoice)
     
-    
-        //User Input Images
+//   https://www.transparenttextures.com/
+
+    //User Input Images
+        
     if (userChoice === "Rock"){
         $("#stone1").show();
         $("#blade1").hide();
@@ -70,7 +76,7 @@ $("#shoot").click(function(){
         $("#blade2").hide();
     }
     
-    // Who wins + Ratio calculator
+    // Who wins + ratio calculator
     
     if (userChoice === "Rock" && computerChoice === "Paper") {
         $("#result").html("Computer Wins"+",");
@@ -146,4 +152,3 @@ $("#shoot").click(function(){
     
 });
 });
-

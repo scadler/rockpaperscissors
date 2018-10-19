@@ -19,35 +19,52 @@ input{
   border-radius: 5px;
 }
 body{
-  background-color: #cecece
+  background-color: #cecece;
+  background-image:url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");
 }
 #RPS{
   height: 235px;
   border: 2px solid #ababab;
 }
 
+#start1{
+   border: 2px solid #ababab;
+  height: 60px;
+  background-color: #a9c9c5;
+}
+#start2{
+   border: 2px solid #ababab;
+  height: 60px;
+  background-color: #a9c9c5;
+}
 #stone1{
   border: 2px solid #ababab;
   height: 60px;
+  background-color: #a9c9c5;
 }
 #blade1{
   border: 2px solid #ababab;
   height: 60px;
+  background-color: #a9c9c5;
 }
 #parchment1{
   border: 2px solid #ababab;
   height: 60px;
+  background-color: #a9c9c5;
 }
 
 #stone2{
   border: 2px solid #ababab;
   height: 60px;
+  background-color: #a9c9c5;
 }
 #blade2{
   border: 2px solid #ababab;
   height: 60px;
+  background-color: #a9c9c5;
 }
 #parchment2{
   border: 2px solid #ababab;
   height: 60px;
+  background-color: #a9c9c5;
 }

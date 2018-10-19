@@ -33,7 +33,7 @@ $("#shoot").click(function(){
     $("#start1").hide();
     $("#start2").hide();
     userChoice = $("#input").val();
-   //Disabled to test style $("#userChoice").text($("#input").val());
+   //$("#userChoice").text($("#input").val());
     randomNumber = Math.random()
     counter = counter + 1
     $("#roundSum").html(counter)

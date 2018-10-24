@@ -24,47 +24,46 @@ body{
 }
 #RPS{
   height: 235px;
-  border: 2px solid #ababab;
 }
 
 #start1{
    border: 2px solid #ababab;
   height: 60px;
-  background-color: #34e5cd;
+  background-color: #5aedd8;
 }
 #start2{
    border: 2px solid #ababab;
   height: 60px;
-  background-color: #34e5cd;
+  background-color: #5aedd8;
 }
 #stone1{
   border: 2px solid #ababab;
   height: 60px;
-  background-color: #34e5cd;
+  background-color: #5aedd8;
 }
 #blade1{
   border: 2px solid #ababab;
   height: 60px;
-  background-color: #34e5cd;
+  background-color: #5aedd8;
 }
 #parchment1{
   border: 2px solid #ababab;
   height: 60px;
-  background-color: #34e5cd;
+  background-color: #5aedd8;
 }
 
 #stone2{
   border: 2px solid #ababab;
   height: 60px;
-  background-color: #34e5cd;
+  background-color: #5aedd8;
 }
 #blade2{
   border: 2px solid #ababab;
   height: 60px;
-  background-color: #34e5cd;
+  background-color: #5aedd8;
 }
 #parchment2{
   border: 2px solid #ababab;
   height: 60px;
-  background-color: #34e5cd;
+  background-color: #5aedd8;
 }

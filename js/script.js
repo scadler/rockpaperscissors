@@ -17,6 +17,7 @@ var compWin = 0
 var userInput = ""
 var winRatio
 var counter = 0   
+var randomInput
 
 
 $(document).ready(function(){
@@ -309,6 +310,12 @@ $("#paperButton").click(function(){
     rpsFunction();
 });
 $("#scissorsButton").click(function(){
+    userChoice = "scissors";
+    $("#input").val("Scissors");
+    rpsFunction();
+$("#randomButton").click(function(){
+    randomNumber = Math.random();
+    //add random outputs
     userChoice = "scissors";
     $("#input").val("Scissors");
     rpsFunction();

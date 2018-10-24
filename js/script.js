@@ -17,10 +17,23 @@ var compWin = 0
 var userInput = ""
 var winRatio
 var counter = 0   
-var randomInput
+var randomInput = ""
 
 
 $(document).ready(function(){
+var randomInputFunction = function(){
+    randomInput = Math.random();
+    if (randomInput <= 0.33) {
+        userChoice = "Rock"
+    }
+    if (randomInput > 0.33 && randomNumber < 0.66) {
+        userChoice = "Scissors"
+    }
+    if (randomInput >= 0.66) {
+        userChoice = "Paper"
+    }
+    $("#input").val(userChoice);
+}
 var rpsFunction = function() {
     $("#start1").hide();
     $("#start2").hide();
@@ -155,6 +168,7 @@ var rpsFunction = function() {
     }
      $("#input").val("");
 }
+
     $("#start1").show();
     $("#start2").show();
     $("#stone1").hide();
@@ -313,11 +327,12 @@ $("#scissorsButton").click(function(){
     userChoice = "scissors";
     $("#input").val("Scissors");
     rpsFunction();
+});
 $("#randomButton").click(function(){
-    randomNumber = Math.random();
-    //add random outputs
-    userChoice = "scissors";
-    $("#input").val("Scissors");
+    randomInputFunction()
     rpsFunction();
+    
+
 });
 });
+

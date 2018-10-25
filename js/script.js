@@ -18,6 +18,7 @@ var userInput = ""
 var winRatio
 var counter = 0   
 var randomInput = ""
+var x = 0
 
 
 $(document).ready(function(){
@@ -34,6 +35,16 @@ var randomInputFunction = function(){
     }
     $("#input").val(userChoice);
 }
+
+var randomThrowFunction = function(){
+     if(x < 3){ 
+        randomInputFunction();
+        rpsFunction();
+        x = x+1;
+        setTimeout(randomThrowFunction, 600);
+    }
+}
+
 var rpsFunction = function() {
     $("#start1").hide();
     $("#start2").hide();
@@ -329,10 +340,8 @@ $("#scissorsButton").click(function(){
     rpsFunction();
 });
 $("#randomButton").click(function(){
-    randomInputFunction()
-    rpsFunction();
-    
-
+    x = 0;
+    randomThrowFunction();
 });
 });
 

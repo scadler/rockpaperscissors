@@ -14,8 +14,11 @@ var computerChoice = "";
 var randomNumber = 0;
 var userWin = 0;
 var compWin = 0;
+var noWin = 0;
 var userInput = "";
 var winRatio;
+var compWinRatio
+var noWinRatio;
 var counter = 0   ;
 var randomInput = "";
 
@@ -104,13 +107,34 @@ var rpsFunction = function() {
         $("#result").html("Computer Wins"+",");
         compWin += 1;
         $("#compWins").html(compWin);
-        winRatio = userWin/(compWin+userWin);
+        winRatio = userWin/(compWin+userWin+noWin);
         winRatio = winRatio*100;
         winRatio = Math.round(winRatio);
+        compWinRatio = compWin/(compWin+userWin+noWin);
+        compWinRatio = compWinRatio*100;
+        compWinRatio = Math.round(compWinRatio);
+        noWinRatio = noWin/(compWin+userWin+noWin);
+        noWinRatio = noWinRatio*100;
+        noWinRatio = Math.round(noWinRatio);
+        $("#tieRatio").html(noWinRatio)
         $("#resultRatio").html(winRatio)
+        $("#compResultRatio").html(compWinRatio)
         console.log(userChoice + " VS " + computerChoice + " " + counter + " ComputerWon");
     }
     if (userChoice === "paper" && computerChoice === "paper") {
+        noWin += 1;
+        winRatio = userWin/(compWin+userWin+noWin);
+        winRatio = winRatio*100;
+        winRatio = Math.round(winRatio);
+        compWinRatio = compWin/(compWin+userWin+noWin);
+        compWinRatio = compWinRatio*100;
+        compWinRatio = Math.round(compWinRatio);
+        noWinRatio = noWin/(compWin+userWin+noWin);
+        noWinRatio = noWinRatio*100;
+        noWinRatio = Math.round(noWinRatio);
+        $("#tieRatio").html(noWinRatio)
+        $("#resultRatio").html(winRatio)
+        $("#compResultRatio").html(compWinRatio)
         $("#result").html("Tie"+",");
         console.log(userChoice + " VS " + computerChoice + " " + counter + " Tie");
     }
@@ -118,13 +142,34 @@ var rpsFunction = function() {
         $("#result").html("User Wins"+",");
         userWin += 1;
         $("#userWins").html(userWin);
-        winRatio = userWin/(compWin+userWin);
+        winRatio = userWin/(compWin+userWin+noWin);
         winRatio = winRatio*100;
         winRatio = Math.round(winRatio);
+        compWinRatio = compWin/(compWin+userWin+noWin);
+        compWinRatio = compWinRatio*100;
+        compWinRatio = Math.round(compWinRatio);
+        noWinRatio = noWin/(compWin+userWin+noWin);
+        noWinRatio = noWinRatio*100;
+        noWinRatio = Math.round(noWinRatio);
+        $("#tieRatio").html(noWinRatio)
         $("#resultRatio").html(winRatio)
+        $("#compResultRatio").html(compWinRatio)
         console.log(userChoice + " VS " + computerChoice + " " + counter + " UserWon");
     }
     if (userChoice === "rock" && computerChoice === "rock") {
+        noWin += 1
+        winRatio = userWin/(compWin+userWin+noWin);
+        winRatio = winRatio*100;
+        winRatio = Math.round(winRatio);
+        compWinRatio = compWin/(compWin+userWin+noWin);
+        compWinRatio = compWinRatio*100;
+        compWinRatio = Math.round(compWinRatio);
+        noWinRatio = noWin/(compWin+userWin+noWin);
+        noWinRatio = noWinRatio*100;
+        noWinRatio = Math.round(noWinRatio);
+        $("#tieRatio").html(noWinRatio)
+        $("#resultRatio").html(winRatio)
+        $("#compResultRatio").html(compWinRatio)
         $("#result").html("Tie"+",");
         console.log(userChoice + " VS " + computerChoice + " " + counter + " Tie");
     }
@@ -132,43 +177,91 @@ var rpsFunction = function() {
         $("#result").html("User Wins"+",");
         userWin += 1;
         $("#userWins").html(userWin);
-        winRatio = userWin/(compWin+userWin);
+        winRatio = userWin/(compWin+userWin+noWin);
         winRatio = winRatio*100;
         winRatio = Math.round(winRatio);
+        compWinRatio = compWin/(compWin+userWin+noWin);
+        compWinRatio = compWinRatio*100;
+        compWinRatio = Math.round(compWinRatio);
+        noWinRatio = noWin/(compWin+userWin+noWin);
+        noWinRatio = noWinRatio*100;
+        noWinRatio = Math.round(noWinRatio);
+        $("#tieRatio").html(noWinRatio)
         $("#resultRatio").html(winRatio)
+        $("#compResultRatio").html(compWinRatio)
+        noWinRatio = noWin/(compWin+userWin+noWin);
+        noWinRatio = noWinRatio*100;
+        noWinRatio = Math.round(noWinRatio);
+        $("tieRatio").html(noWinRatio)
         console.log(userChoice + " VS " + computerChoice + " " + counter + " UserWon");
     }
     if (userChoice === "scissors" && computerChoice === "rock") {
         $("#result").html("Computer Wins"+",");
         compWin += 1;
-        $("#compWins").html(compWin);
-        winRatio = userWin/(compWin+userWin);
+        winRatio = userWin/(compWin+userWin+noWin);
         winRatio = winRatio*100;
         winRatio = Math.round(winRatio);
+        compWinRatio = compWin/(compWin+userWin+noWin);
+        compWinRatio = compWinRatio*100;
+        compWinRatio = Math.round(compWinRatio);
+        noWinRatio = noWin/(compWin+userWin+noWin);
+        noWinRatio = noWinRatio*100;
+        noWinRatio = Math.round(noWinRatio);
+        $("#tieRatio").html(noWinRatio)
         $("#resultRatio").html(winRatio)
+        $("#compResultRatio").html(compWinRatio)
         console.log(userChoice + " VS " + computerChoice + " " + counter + " ComputerWon");
     }
     if (userChoice === "rock" && computerChoice === "scissors") {
         $("#result").html("User Wins"+",");
         userWin += 1;
         $("#userWins").html(userWin);
-        winRatio = userWin/(compWin+userWin);
+        winRatio = userWin/(compWin+userWin+noWin);
         winRatio = winRatio*100;
         winRatio = Math.round(winRatio);
+        compWinRatio = compWin/(compWin+userWin+noWin);
+        compWinRatio = compWinRatio*100;
+        compWinRatio = Math.round(compWinRatio);
+        noWinRatio = noWin/(compWin+userWin+noWin);
+        noWinRatio = noWinRatio*100;
+        noWinRatio = Math.round(noWinRatio);
+        $("#tieRatio").html(noWinRatio)
         $("#resultRatio").html(winRatio)
+        $("#compResultRatio").html(compWinRatio)
         console.log(userChoice + " VS " + computerChoice + " " + counter + " UserWon");
     }
     if (userChoice === "paper" && computerChoice === "scissors") {
         $("#result").html("Computer Wins"+",");
         compWin += 1;
         $("#compWins").html(compWin);
-        winRatio = userWin/(compWin+userWin);
+        winRatio = userWin/(compWin+userWin+noWin);
         winRatio = winRatio*100;
         winRatio = Math.round(winRatio);
+        compWinRatio = compWin/(compWin+userWin+noWin);
+        compWinRatio = compWinRatio*100;
+        compWinRatio = Math.round(compWinRatio);
+        noWinRatio = noWin/(compWin+userWin+noWin);
+        noWinRatio = noWinRatio*100;
+        noWinRatio = Math.round(noWinRatio);
+        $("#tieRatio").html(noWinRatio)
         $("#resultRatio").html(winRatio)
+        $("#compResultRatio").html(compWinRatio)
         console.log(userChoice + " VS " + computerChoice + " " + counter + " ComputerWon");
     }
     if (userChoice === "scissors" && computerChoice === "scissors") {
+        noWin += 1;
+        winRatio = userWin/(compWin+userWin+noWin);
+        winRatio = winRatio*100;
+        winRatio = Math.round(winRatio);
+        compWinRatio = compWin/(compWin+userWin+noWin);
+        compWinRatio = compWinRatio*100;
+        compWinRatio = Math.round(compWinRatio);
+        noWinRatio = noWin/(compWin+userWin+noWin);
+        noWinRatio = noWinRatio*100;
+        noWinRatio = Math.round(noWinRatio);
+        $("#tieRatio").html(noWinRatio)
+        $("#resultRatio").html(winRatio)
+        $("#compResultRatio").html(compWinRatio)
         $("#result").html("Tie"+",");
         console.log(userChoice + " VS " + computerChoice + " " + counter + " Tie");
     }
